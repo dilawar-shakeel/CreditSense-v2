@@ -8,24 +8,24 @@ Lock the product scope and the stack before any feature code, so later phases ne
 
 ## Deliverables
 
-- [ ] `docs/PRODUCT.md`: the users (SBA lender credit analyst and credit officer), the job (triage and memo for a 7(a) application), and what is out of scope (no automated credit decisions).
-- [ ] `docs/adr/`: one ADR per Phase 0 decision, six in total:
-  - [ ] 0001 Product framing: human decides, the copilot only recommends
-  - [ ] 0002 LangGraph fixed workflow graph
-  - [ ] 0003 Qdrant as the vector database
-  - [ ] 0004 Role of Postgres (everything except vectors)
-  - [ ] 0005 OpenAI behind `src/creditsense/llm/` with a hard cap of about $5 a month
-  - [ ] 0006 $0 hosting on free tiers only
-- [ ] Repo skeleton:
-  - [ ] uv project on Python 3.12, with the `src/creditsense/` package layout from `CLAUDE.md`
-  - [ ] ruff (lint and format) and `mypy --strict` on the core packages
-  - [ ] pytest with one smoke test
-  - [ ] pre-commit hooks
-  - [ ] `.gitattributes` with `* text=auto eol=lf`
-  - [ ] justfile with `set windows-shell := ["powershell.exe", "-NoLogo", "-Command"]` and the recipes `setup`, `up`, `down`, `lint`, `typecheck`, `test`, `check`
-- [ ] `docker-compose.yml` with Postgres, Qdrant and MLflow (Postgres backend store), plus `.env.example`. `.env` is git-ignored.
-- [ ] GitHub Actions workflow that runs `just check` on every PR.
-- [ ] `docs/MODEL_RISK.md` stub: intended use, limits, and the rule that the model never makes the final decision.
+- [X] `docs/PRODUCT.md`: the users (SBA lender credit analyst and credit officer), the job (triage and memo for a 7(a) application), and what is out of scope (no automated credit decisions).
+- [X] `docs/adr/`: one ADR per Phase 0 decision, six in total:
+  - [X] 0001 Product framing: human decides, the copilot only recommends
+  - [X] 0002 LangGraph fixed workflow graph
+  - [X] 0003 Qdrant as the vector database
+  - [X] 0004 Role of Postgres (everything except vectors)
+  - [X] 0005 OpenAI behind `src/creditsense/llm/` with a hard cap of about $5 a month
+  - [X] 0006 $0 hosting on free tiers only
+- [X] Repo skeleton:
+  - [X] uv project on Python 3.12, with the `src/creditsense/` package layout from `CLAUDE.md`
+  - [X] ruff (lint and format) and `mypy --strict` on the core packages
+  - [X] pytest with one smoke test
+  - [X] pre-commit hooks
+  - [X] `.gitattributes` with `* text=auto eol=lf`
+  - [X] justfile with `set windows-shell := ["powershell.exe", "-NoLogo", "-Command"]` and the recipes `setup`, `up`, `down`, `lint`, `typecheck`, `test`, `check`
+- [X] `docker-compose.yml` with Postgres, Qdrant and MLflow (Postgres backend store), plus `.env.example`. `.env` is git-ignored.
+- [X] GitHub Actions workflow that runs `just check` on every PR.
+- [X] `docs/MODEL_RISK.md` stub: intended use, limits, and the rule that the model never makes the final decision.
 
 The recipes `data`, `train`, `eval` and `migrate` belong to later phases. They are not added in Phase 0.
 
