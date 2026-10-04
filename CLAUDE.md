@@ -2,7 +2,7 @@
 
 Analyst copilot for US SBA 7(a) small-business lending. It scores default risk on real SBA loan history, checks each application against SBA rules with cited sources, and drafts a credit memo. **A human credit officer always makes the final decision.**
 
-Full plan, phases and decision log: https://claude.ai/code/artifact/2857b14f-3134-47cd-b2b6-5ca53046cd70
+Full plan for every phase (goals, deliverables, exit criteria): `docs/PLAN.md`. Plain-English task list: `STEP_BY_STEP.md`. Always read these local files; the original plan is a Claude Doc you cannot open.
 v1 (synthetic Pakistan/SBP data) lives at github.com/dilawar-shakeel/Creditsense and stays as the predecessor. Do not copy its metrics.
 
 ## Non-negotiable rules
@@ -92,7 +92,7 @@ src/creditsense/
   audit/     hash-chained audit log writer and verifier
   ui/        Streamlit app
 tests/       mirrors src/ ; tests/golden/ holds the 20 golden applications
-docs/        PRODUCT.md, DATA.md, MODEL_CARD.md, MODEL_RISK.md, EVALS.md, adr/
+docs/        PLAN.md, PRODUCT.md, DATA.md, MODEL_CARD.md, MODEL_RISK.md, EVALS.md, adr/, phases/
 artifacts/   pipeline outputs (metrics files, model bundles); never edit by hand
 ```
 
