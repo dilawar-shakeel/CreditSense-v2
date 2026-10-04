@@ -7,3 +7,7 @@ __pycache__/
 .pytest_cache/
 dist/
 *.egg-info/
+
+# Raw data stays out of Git; only its checksum is committed
+data/raw/*
+!data/raw/CHECKSUM.txt

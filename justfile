@@ -27,3 +27,11 @@ test:
     uv run pytest
 
 check: lint typecheck test
+
+# Record the SHA-256 checksum of data/raw/SBAnational.csv (run after downloading)
+checksum:
+    uv run python -m creditsense.data.checksum write
+
+# Fail if data/raw/SBAnational.csv does not match data/raw/CHECKSUM.txt
+verify-data:
+    uv run python -m creditsense.data.checksum verify
