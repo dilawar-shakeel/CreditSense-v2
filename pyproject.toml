@@ -1,0 +1,37 @@
+[project]
+name = "creditsense"
+version = "0.1.0"
+description = "Analyst copilot for US SBA 7(a) small-business lending."
+authors = [
+    { name = "Dilawar Shakeel", email = "acct7415@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "mypy>=2.4.0",
+    "pre-commit>=4.6.2",
+    "pytest>=9.1.1",
+    "ruff>=0.16.10",
+]
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+
+[tool.mypy]
+strict = true
+python_version = "3.12"
+files = ["src/creditsense"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
