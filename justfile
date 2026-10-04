@@ -8,14 +8,13 @@ setup:
     uv sync
     uv run pre-commit install
 
-# Postgres, Qdrant and MLflow arrive with docker-compose.yml (Phase 0, docker task)
+# Start Postgres, Qdrant and MLflow
 up:
-    @echo "docker-compose.yml does not exist yet"
-    @exit 1
+    docker compose up -d --build
 
+# Stop the stack (data volumes are kept)
 down:
-    @echo "docker-compose.yml does not exist yet"
-    @exit 1
+    docker compose down
 
 lint:
     uv run ruff check
