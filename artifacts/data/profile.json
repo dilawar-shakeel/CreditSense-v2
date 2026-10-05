@@ -1,0 +1,532 @@
+{
+  "column_profiles": [
+    {
+      "blank": 0,
+      "distinct": 899164,
+      "kind": "integer",
+      "name": "LoanNr_ChkDgt",
+      "off_kind_values": 0
+    },
+    {
+      "blank": 3,
+      "distinct": 779587,
+      "kind": "text",
+      "name": "Name",
+      "off_kind_values": 0
+    },
+    {
+      "blank": 30,
+      "distinct": 32582,
+      "kind": "text",
+      "name": "City",
+      "off_kind_values": 0
+    },
+    {
+      "blank": 14,
+      "distinct": 52,
+      "kind": "text",
+      "name": "State",
+      "off_kind_values": 0
+    },
+    {
+      "blank": 0,
+      "distinct": 33611,
+      "kind": "integer",
+      "name": "Zip",
+      "off_kind_values": 0
+    },
+    {
+      "blank": 1559,
+      "distinct": 5803,
+      "kind": "text",
+      "name": "Bank",
+      "off_kind_values": 0
+    },
+    {
+      "blank": 1566,
+      "distinct": 57,
+      "kind": "text",
+      "name": "BankState",
+      "off_kind_values": 0
+    },
+    {
+      "blank": 0,
+      "distinct": 1312,
+      "kind": "integer",
+      "name": "NAICS",
+      "off_kind_values": 0
+    },
+    {
+      "blank": 0,
+      "distinct": 9859,
+      "kind": "date",
+      "name": "ApprovalDate",
+      "off_kind_values": 0
+    },
+    {
+      "blank": 0,
+      "distinct": 52,
+      "kind": "integer",
+      "name": "ApprovalFY",
+      "off_kind_values": 18
+    },
+    {
+      "blank": 0,
+      "distinct": 412,
+      "kind": "integer",
+      "name": "Term",
+      "off_kind_values": 0
+    },
+    {
+      "blank": 0,
+      "distinct": 599,
+      "kind": "integer",
+      "name": "NoEmp",
+      "off_kind_values": 0
+    },
+    {
+      "blank": 136,
+      "distinct": 4,
+      "kind": "integer",
+      "name": "NewExist",
+      "off_kind_values": 0,
+      "value_counts": {
+        "(blank)": 136,
+        "0": 1034,
+        "1": 644869,
+        "2": 253125
+      }
+    },
+    {
+      "blank": 0,
+      "distinct": 246,
+      "kind": "integer",
+      "name": "CreateJob",
+      "off_kind_values": 0
+    },
+    {
+      "blank": 0,
+      "distinct": 358,
+      "kind": "integer",
+      "name": "RetainedJob",
+      "off_kind_values": 0
+    },
+    {
+      "blank": 0,
+      "distinct": 2768,
+      "kind": "integer",
+      "name": "FranchiseCode",
+      "off_kind_values": 0
+    },
+    {
+      "blank": 0,
+      "distinct": 3,
+      "kind": "integer",
+      "name": "UrbanRural",
+      "off_kind_values": 0,
+      "value_counts": {
+        "0": 323167,
+        "1": 470654,
+        "2": 105343
+      }
+    },
+    {
+      "blank": 4528,
+      "distinct": 19,
+      "kind": "text",
+      "name": "RevLineCr",
+      "off_kind_values": 0,
+      "value_counts": {
+        "(blank)": 4528,
+        ",": 1,
+        "-": 1,
+        ".": 1,
+        "0": 257602,
+        "1": 23,
+        "2": 6,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "7": 1,
+        "A": 1,
+        "C": 2,
+        "N": 420288,
+        "Q": 1,
+        "R": 14,
+        "T": 15284,
+        "Y": 201397,
+        "`": 11
+      }
+    },
+    {
+      "blank": 2582,
+      "distinct": 9,
+      "kind": "text",
+      "name": "LowDoc",
+      "off_kind_values": 0,
+      "value_counts": {
+        "(blank)": 2582,
+        "0": 1491,
+        "1": 1,
+        "A": 497,
+        "C": 758,
+        "N": 782822,
+        "R": 75,
+        "S": 603,
+        "Y": 110335
+      }
+    },
+    {
+      "blank": 736465,
+      "distinct": 6449,
+      "kind": "date",
+      "name": "ChgOffDate",
+      "off_kind_values": 0
+    },
+    {
+      "blank": 2368,
+      "distinct": 8473,
+      "kind": "date",
+      "name": "DisbursementDate",
+      "off_kind_values": 0
+    },
+    {
+      "blank": 0,
+      "distinct": 118859,
+      "kind": "money",
+      "name": "DisbursementGross",
+      "off_kind_values": 0
+    },
+    {
+      "blank": 0,
+      "distinct": 15,
+      "kind": "money",
+      "name": "BalanceGross",
+      "off_kind_values": 0,
+      "value_counts": {
+        "$0.00": 899150,
+        "$1,760.00": 1,
+        "$115,820.00": 1,
+        "$12,750.00": 1,
+        "$25,000.00": 1,
+        "$37,100.00": 1,
+        "$395,476.00": 1,
+        "$41,509.00": 1,
+        "$43,127.00": 1,
+        "$600.00": 1,
+        "$827,875.00": 1,
+        "$84,617.00": 1,
+        "$9,111.00": 1,
+        "$96,908.00": 1,
+        "$996,262.00": 1
+      }
+    },
+    {
+      "blank": 1997,
+      "distinct": 3,
+      "kind": "text",
+      "name": "MIS_Status",
+      "off_kind_values": 0,
+      "value_counts": {
+        "(blank)": 1997,
+        "CHGOFF": 157558,
+        "P I F": 739609
+      }
+    },
+    {
+      "blank": 0,
+      "distinct": 83165,
+      "kind": "money",
+      "name": "ChgOffPrinGr",
+      "off_kind_values": 0
+    },
+    {
+      "blank": 0,
+      "distinct": 22128,
+      "kind": "money",
+      "name": "GrAppv",
+      "off_kind_values": 0
+    },
+    {
+      "blank": 0,
+      "distinct": 38326,
+      "kind": "money",
+      "name": "SBA_Appv",
+      "off_kind_values": 0
+    }
+  ],
+  "columns": 27,
+  "loans_per_approval_year": {
+    "1962": {
+      "(blank)": 1,
+      "CHGOFF": 0,
+      "P I F": 0
+    },
+    "1965": {
+      "(blank)": 1,
+      "CHGOFF": 0,
+      "P I F": 0
+    },
+    "1966": {
+      "(blank)": 0,
+      "CHGOFF": 1,
+      "P I F": 0
+    },
+    "1967": {
+      "(blank)": 2,
+      "CHGOFF": 0,
+      "P I F": 0
+    },
+    "1968": {
+      "(blank)": 1,
+      "CHGOFF": 1,
+      "P I F": 0
+    },
+    "1969": {
+      "(blank)": 1,
+      "CHGOFF": 2,
+      "P I F": 1
+    },
+    "1970": {
+      "(blank)": 0,
+      "CHGOFF": 7,
+      "P I F": 1
+    },
+    "1971": {
+      "(blank)": 2,
+      "CHGOFF": 18,
+      "P I F": 0
+    },
+    "1972": {
+      "(blank)": 2,
+      "CHGOFF": 21,
+      "P I F": 4
+    },
+    "1973": {
+      "(blank)": 3,
+      "CHGOFF": 45,
+      "P I F": 4
+    },
+    "1974": {
+      "(blank)": 0,
+      "CHGOFF": 40,
+      "P I F": 2
+    },
+    "1975": {
+      "(blank)": 1,
+      "CHGOFF": 26,
+      "P I F": 3
+    },
+    "1976": {
+      "(blank)": 1,
+      "CHGOFF": 62,
+      "P I F": 3
+    },
+    "1976A": {
+      "(blank)": 0,
+      "CHGOFF": 16,
+      "P I F": 2
+    },
+    "1977": {
+      "(blank)": 0,
+      "CHGOFF": 128,
+      "P I F": 9
+    },
+    "1978": {
+      "(blank)": 3,
+      "CHGOFF": 229,
+      "P I F": 10
+    },
+    "1979": {
+      "(blank)": 3,
+      "CHGOFF": 332,
+      "P I F": 17
+    },
+    "1980": {
+      "(blank)": 24,
+      "CHGOFF": 436,
+      "P I F": 17
+    },
+    "1981": {
+      "(blank)": 28,
+      "CHGOFF": 426,
+      "P I F": 176
+    },
+    "1982": {
+      "(blank)": 0,
+      "CHGOFF": 305,
+      "P I F": 414
+    },
+    "1983": {
+      "(blank)": 2,
+      "CHGOFF": 534,
+      "P I F": 1148
+    },
+    "1984": {
+      "(blank)": 3,
+      "CHGOFF": 746,
+      "P I F": 1273
+    },
+    "1985": {
+      "(blank)": 3,
+      "CHGOFF": 785,
+      "P I F": 1156
+    },
+    "1986": {
+      "(blank)": 0,
+      "CHGOFF": 865,
+      "P I F": 1253
+    },
+    "1987": {
+      "(blank)": 0,
+      "CHGOFF": 965,
+      "P I F": 1253
+    },
+    "1988": {
+      "(blank)": 0,
+      "CHGOFF": 938,
+      "P I F": 960
+    },
+    "1989": {
+      "(blank)": 3,
+      "CHGOFF": 863,
+      "P I F": 12382
+    },
+    "1990": {
+      "(blank)": 0,
+      "CHGOFF": 663,
+      "P I F": 14196
+    },
+    "1991": {
+      "(blank)": 6,
+      "CHGOFF": 443,
+      "P I F": 15217
+    },
+    "1992": {
+      "(blank)": 10,
+      "CHGOFF": 450,
+      "P I F": 20425
+    },
+    "1993": {
+      "(blank)": 6,
+      "CHGOFF": 434,
+      "P I F": 22865
+    },
+    "1994": {
+      "(blank)": 14,
+      "CHGOFF": 696,
+      "P I F": 30888
+    },
+    "1995": {
+      "(blank)": 70,
+      "CHGOFF": 1296,
+      "P I F": 44392
+    },
+    "1996": {
+      "(blank)": 91,
+      "CHGOFF": 1646,
+      "P I F": 38375
+    },
+    "1997": {
+      "(blank)": 30,
+      "CHGOFF": 2247,
+      "P I F": 35471
+    },
+    "1998": {
+      "(blank)": 11,
+      "CHGOFF": 2970,
+      "P I F": 33035
+    },
+    "1999": {
+      "(blank)": 15,
+      "CHGOFF": 3694,
+      "P I F": 33654
+    },
+    "2000": {
+      "(blank)": 29,
+      "CHGOFF": 4266,
+      "P I F": 33086
+    },
+    "2001": {
+      "(blank)": 33,
+      "CHGOFF": 4450,
+      "P I F": 32867
+    },
+    "2002": {
+      "(blank)": 84,
+      "CHGOFF": 5187,
+      "P I F": 39120
+    },
+    "2003": {
+      "(blank)": 193,
+      "CHGOFF": 8425,
+      "P I F": 49575
+    },
+    "2004": {
+      "(blank)": 95,
+      "CHGOFF": 12306,
+      "P I F": 55889
+    },
+    "2005": {
+      "(blank)": 567,
+      "CHGOFF": 19479,
+      "P I F": 57479
+    },
+    "2006": {
+      "(blank)": 284,
+      "CHGOFF": 26517,
+      "P I F": 49239
+    },
+    "2007": {
+      "(blank)": 227,
+      "CHGOFF": 30658,
+      "P I F": 40991
+    },
+    "2008": {
+      "(blank)": 82,
+      "CHGOFF": 16250,
+      "P I F": 23208
+    },
+    "2009": {
+      "(blank)": 23,
+      "CHGOFF": 3971,
+      "P I F": 15132
+    },
+    "2010": {
+      "(blank)": 20,
+      "CHGOFF": 2312,
+      "P I F": 14516
+    },
+    "2011": {
+      "(blank)": 15,
+      "CHGOFF": 989,
+      "P I F": 11604
+    },
+    "2012": {
+      "(blank)": 5,
+      "CHGOFF": 343,
+      "P I F": 5649
+    },
+    "2013": {
+      "(blank)": 3,
+      "CHGOFF": 70,
+      "P I F": 2385
+    },
+    "2014": {
+      "(blank)": 0,
+      "CHGOFF": 5,
+      "P I F": 263
+    }
+  },
+  "non_integer_years": [
+    "1976A"
+  ],
+  "rows": 899164,
+  "source_file": "SBAnational.csv",
+  "source_sha256": "0359128a0b7599e83e4c2e4dcdd781d9121a765237f98d9f0ec1ab3e7c522548",
+  "status_counts": {
+    "(blank)": 1997,
+    "CHGOFF": 157558,
+    "P I F": 739609
+  }
+}

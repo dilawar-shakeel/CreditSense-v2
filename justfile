@@ -35,3 +35,7 @@ checksum:
 # Fail if data/raw/SBAnational.csv does not match data/raw/CHECKSUM.txt
 verify-data:
     uv run python -m creditsense.data.checksum verify
+
+# Profile the raw file into artifacts/data/profile.json and docs/DATA.md
+profile: verify-data
+    uv run python -m creditsense.data.profile
